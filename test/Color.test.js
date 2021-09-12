@@ -33,4 +33,15 @@ contract('Color', (accounts) => {
       assert.equal(symbol, 'COLOR')
     })
   })
+
+  describe('minting', async () => {
+    it('creates a new token', async () => {
+      const result = await contract.mint('#EC085F')
+      const totalSupply = await contract.totalSupply()
+      // SUCCESS
+      assert.equal(totalSupply, 1)
+      // it mints to the first address in Ganache
+      console.log(result)
+    })
+  })
 })
