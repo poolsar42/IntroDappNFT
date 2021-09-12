@@ -14,9 +14,10 @@ contract Color is ERC721 {
     // now it's public, but I can change it
     function mint(string memory _color) public {
         // Require unique color
-        colors.push(_color);
+        require(!_colorExists[_color]); // color has to not exist
         // Color -  add it
-        uint256 _id = colors.length - 1;
+        colors.push(_color);
+        uint256 _id = colors.length;
         // Call the mint function
         _mint(msg.sender, _id);
         // Color - track it
