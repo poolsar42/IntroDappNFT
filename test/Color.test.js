@@ -6,6 +6,8 @@ require('chai')
   .use(require('chai-as-promised'))
   .should()
 // this accounts passed in by ganache
+
+// this is just one contract with many colors
 contract('Color', (accounts) => {
 
   let contract
