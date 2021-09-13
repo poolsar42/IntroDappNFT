@@ -20,6 +20,10 @@
 - **Solidity** for contracts itself
 - **MetaMask** - to be able to connect to Ethereum Network in Chrome
 
+### Truffle Configuration
+- https://www.trufflesuite.com/docs/truffle/reference/configuration
+- https://www.trufflesuite.com/docs/truffle/reference/configuration
+
 ### Migration
 
 - every time contract changes - run \
