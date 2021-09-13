@@ -23,7 +23,7 @@
 
 ### Truffle Configuration
 - https://www.trufflesuite.com/docs/truffle/reference/configuration
-- https://www.trufflesuite.com/docs/truffle/reference/configuration
+- https://gist.github.com/kdelwat/26d9049adbe6e165e8ba774e7034d231
 
 ### Migration
 
