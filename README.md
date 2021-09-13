@@ -2,7 +2,7 @@
 
 ### ERC-721 - protocol for NFT
 
-- erc721.org
+- https://erc721.org
 - https://github.com/OpenZeppelin/openzeppelin-contracts/tree/master/contracts/token/ERC721
 
 ### Contracts
