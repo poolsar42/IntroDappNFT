@@ -24,3 +24,6 @@
 
 - every time contract changes - run \
   `truffle migrate --reset` it will post new contract on Ganache
+- before checking fronted be sure to run in `truffle console` \
+  `contract = Color.deployed()`
+  Note: You can use your name instead of Color

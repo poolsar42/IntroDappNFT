@@ -64,6 +64,16 @@ class App extends Component {
     })
   }
 
+  mint = async (color) => {
+    // send method to add data to blockchain
+    // mint is method from my smart-contract
+    await this.state.contract.methods.mint(color).send({
+      from: this.state.account // always needed from
+    }).once('receipt', (receipt) => {
+      this.setState({colors: [...this.state.colors, color]})
+    })
+  }
+
   // all lines above - loading blockhain data to the dom
 
   render() {
@@ -88,7 +98,25 @@ class App extends Component {
           <div className="row">
             <main role="main" className="col-lg-12 d-flex text-center">
               <div className="content mr-auto ml-auto">
-
+                <h1>Issue Token</h1>
+                <form onSubmit={(event) => {
+                  event.preventDefault()
+                  const color = this.color.value
+                  this.mint(color)
+                }}>
+                  <input
+                    type="text"
+                    className="form-control mb-1"
+                    placeholder="for example #FFFFFF"
+                    ref={(input) => { this.color = input }} //? weeb shit
+                  />
+                  <button
+                    type="submit"
+                    className="btn btn-block btn-primary"
+                    value="MINT">
+                    Create new color-NFT
+                  </button>
+                </form>
               </div>
             </main>
           </div>
@@ -97,7 +125,7 @@ class App extends Component {
             {this.state.colors.map((color, id) => {
               return (
                 <div key={id} className="col-md-3 mb-0">
-                  <div className="token" style={{ backgroundColor: color}}></div>
+                  <div className="token" style={{ backgroundColor: color }}></div>
                   <div>
                     {color}
                   </div>
