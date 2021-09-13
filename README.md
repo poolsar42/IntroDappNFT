@@ -4,6 +4,7 @@
 
 - https://erc721.org
 - https://github.com/OpenZeppelin/openzeppelin-contracts/tree/master/contracts/token/ERC721
+- https://ethereum.org/en/developers/docs/standards/tokens/erc-721/
 
 ### Contracts
 
@@ -22,7 +23,6 @@
 
 ### Truffle Configuration
 - https://www.trufflesuite.com/docs/truffle/reference/configuration
-- https://ethereum.org/en/developers/docs/standards/tokens/erc-721/
 - https://www.trufflesuite.com/docs/truffle/reference/configuration
 
 ### Migration
