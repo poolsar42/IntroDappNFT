@@ -22,6 +22,7 @@
 
 ### Truffle Configuration
 - https://www.trufflesuite.com/docs/truffle/reference/configuration
+- https://ethereum.org/en/developers/docs/standards/tokens/erc-721/
 - https://www.trufflesuite.com/docs/truffle/reference/configuration
 
 ### Migration
